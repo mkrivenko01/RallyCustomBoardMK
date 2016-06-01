@@ -8,7 +8,7 @@ Ext.define('CustomApp', {
             layout: {
                 type:'hbox',
                 align: 'stretch'
-            },
+            }
         });
 
         this.add(this.pulldownContainer);
@@ -91,14 +91,14 @@ Ext.define('CustomApp', {
                         if (!this.myGrid) {
                             console.log('creating grid');
                             this._createGrid(defectStore);
-                        };
+                        }
 
                     },
                     scope: this
                 },
                 fetch: ['FormattedID', 'Name', 'ScheduleState', 'Severity','Iteration']
             });
-        };
+        }
     },
 
     _createGrid: function(aStore) {
